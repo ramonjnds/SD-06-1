@@ -4,8 +4,11 @@ function Mail(subj, msg) {
   }
   
   // Type your code below this line!
+
+  const subject = process.argv[2]
+  const message = process.argv[3]
   
-  const newMail = new Mail(process.argv[2],process.argv[3] )
+  const newMail = new Mail(subject, message)
   // Type your code above this line!
   
   console.log(newMail.subject + ": " + newMail.message)
